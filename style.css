@@ -13,7 +13,6 @@ body {
 }
 
 header,
-main,
 nav {
   padding: 6px;
 }
@@ -31,6 +30,44 @@ main {
   display: grid;
   grid-template-columns: 3fr 1fr;
   grid-template-rows: 1fr 1fr;
+}
+
+.projects {
+  border: 1px solid red;
+  padding: 9px;
+  grid-column: 1 / 2;
+  grid-row: 1/3;
+}
+
+.projects h1 {
+  height: 5%;
+}
+
+.cards {
+  border: 1px solid black;
+  height: 85%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-auto-rows: auto;
+  gap: 15px;
+}
+
+.cards div {
+  background-color: var(--main-white);
+  padding: 9px;
+  border-radius: 5px;
+}
+
+.announcements {
+  padding: 9px;
+  grid-column: 2 / 3;
+  grid-row: 1 / 2;
+}
+
+.trending {
+  padding: 9px;
+  grid-column: 2 / 3;
+  grid-row: 2 / 3;
 }
 
 nav {
