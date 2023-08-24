@@ -1,0 +1,40 @@
+:root {
+  --main-white: rgba(228, 243, 236, 0.742);
+  --main-gray: rgba(128, 128, 128, 0.353);
+  --main-bg-color: aquamarine;
+}
+
+body {
+  min-height: 100vh;
+  margin: 0;
+  display: grid;
+  grid-template-columns: 1fr 5fr;
+  grid-template-rows: 1fr 4fr;
+}
+
+header,
+main,
+nav {
+  padding: 6px;
+}
+
+header {
+  background-color: var(--main-white);
+  grid-column: 2 / 3;
+  grid-row: 1;
+}
+
+main {
+  background-color: var(--main-gray);
+  grid-column: 2 / 3;
+  grid-row: 2 / 3;
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  grid-template-rows: 1fr 1fr;
+}
+
+nav {
+  background-color: var(--main-bg-color);
+  grid-column: 1 / 2;
+  grid-row: 1 / 3;
+}
